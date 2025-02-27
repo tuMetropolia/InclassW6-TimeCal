@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'Tu Maven'
+    }
     stages {
         stage('checking') {
             steps {
