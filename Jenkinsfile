@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage(Test & Coverage') {
+        stage('Test & Coverage') {
             steps {
                 sh 'mvn test jacoco:report'
             }
